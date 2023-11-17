@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan";
+}
+:root {
+  /* ### Primary */
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(334, 80%, 67%);
+  /* ### Neutral */
+  --Dark-Grayish-Magenta: hsl(301, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(301, 23%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 1110px;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+
+.resumen {
+  display: flex;
+  justify-content: space-between;
+  color: var(--Very-Dark-Magenta);
+  .info {
+    width: 445px;
+    & h1 {
+      font-size: 56px;
+      letter-spacing: -2px;
+      line-height: 48px;
+      font-weight: 700;
+      margin-bottom: 26px;
+    }
+    & p {
+      color: var(--Dark-Grayish-Magenta);
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: -0.46px;
+      line-height: 25px;
+    }
+  }
+  .rating {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 27px;
+    .card-rating {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      padding-left: 32px;
+      gap: 32.45px;
+      border-radius: 8px;
+      width: 445px;
+      height: 56px;
+      background-color: var(--Light-Grayish-Magenta);
+      .starts {
+        display: flex;
+        gap: 8.2px;
+      }
+      & p {
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
+    & > div:nth-child(2) {
+      margin-left: 48px;
+    }
+    & > div:nth-child(3) {
+      margin-left: 95px;
+    }
+  }
+}
+
+.reviews {
+  margin-top: 71px;
+  display: flex;
+  justify-content: space-between;
+  .card-review {
+    color: white;
+    width: 350px;
+    height: 234px;
+    box-sizing: border-box;
+    padding: 40px 32px 35px 32px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 8px;
+    .perfil {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      & img {
+        height: 40px;
+        border-radius: 100%;
+      }
+      .user {
+        font-size: 17px;
+        .name {
+          margin-top: 2px;
+          font-weight: 700;
+          margin-bottom: 4px;
+        }
+        .verified {
+          color: var(--Soft-Pink);
+          font-weight: 400;
+        }
+      }
+    }
+    & p {
+      margin-top: 31px;
+      font-size: 17px;
+      letter-spacing: -0.3px;
+      line-height: 22px;
+      font-weight: 500;
+    }
+  }
+  & > div:nth-child(2) {
+    margin-top: 16px;
+  }
+  & > div:nth-child(3) {
+    margin-top: 32px;
+  }
+}
