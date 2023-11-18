@@ -182,10 +182,6 @@ main {
         justify-content: center;
         padding: 0;
         gap: 15.8px;
-        .starts {
-        }
-        & p {
-        }
       }
       & > div {
         margin: 0 auto !important;
